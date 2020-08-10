@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -58,7 +60,7 @@
 						<h1>Jimin</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
-								data-rotate='["Web Developer.", "programmer."]'></span>
+								data-rotate='["Web Developer.", "Programmer."]'></span>
 						</h2>
 					</div>
 				</div>
@@ -318,36 +320,55 @@
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
 						<a href="https://github.com/zhimin8/selfStudy.git" class="block-20"
-							style="background-image: url('images/image_2.jpg');">
+							style="background-image: url('images/todo1.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading"><a href="https://github.com/zhimin8/selfStudy.git">Wallpapaer
 									with.Location</a></h3>
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
-									<span class="mr-2">2020.05</span>
+									<button class="btn btn-primary py-3 px-3" id="myBtn1">IMAGE VIEW</button>
+									&emsp;&emsp;
 									<a href="https://github.com/zhimin8/selfStudy.git" class="mr-2">Github GO→</a>
 								</p>
 							</div>
 							<p> to-do List가 포함 된 배경화면 <br>
-								Locataion 좌표를 활용하여, 위치 정보 확인 가능 <br>
+								Location 좌표를 활용하여, 위치 정보 확인 가능 <br>
 								배경 사진 랜덤 적용
 							</p>
 						</div>
 					</div>
 				</div>
-
+				
+				<!-- The Modal -->
+				<div id="myModal1" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+					<span class="close">&times;</span>                                                               
+					<p>
+						<div class="slider">
+							<div class="slide" style="background-image: url(images/todo1.jpg);"></div>
+							<div class="slide" style="background-image: url(images/todo2.jpg);"></div>
+							<div class="slide" style="background-image: url(images/todo3.jpg);"></div>
+							<div class="slide" style="background-image: url(images/todo4.jpg);"></div>
+							<a class="prev" onclick="button_click(-1)">&#10094</a>
+      						<a class="next" onclick="button_click(1)">&#10095</a>
+						</div>
+					</p>
+					</div>
+				</div>
+	
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/zhimin8/YAGOOZZIM.git" class="block-20"
-							style="background-image: url('images/yagoozzim.jpg');">
+						<a href="https://github.com/zhimin8/YAGOOZZIM.git" class="block-20" style="background-image: url('images/yagoozzim.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading"><a href="https://github.com/zhimin8/YAGOOZZIM.git">YAGOOZZIM : 야구찜</a>
 							</h3>
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
-									<span class="mr-2">2020.07</span>
+									<button class="btn btn-primary py-3 px-3" id="myBtn2">IMAGE VIEW</button>
+									&emsp;&emsp;
 									<a href="https://github.com/zhimin8/YAGOOZZIM.git" class="mr-2">Github GO→</a>
 								</p>
 							</div>
@@ -356,7 +377,30 @@
 					</div>
 				</div>
 
+				<!-- The Modal -->
+				<div id="myModal2" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+					<span class="close">&times;</span>                                                               
+					<p>
+						<div class="slider">
+							<div class="slide" style="background-image: url(images/zzim1.jpg);"></div>
+							<div class="slide" style="background-image: url(images/zzim2.jpg);"></div>
+							<div class="slide" style="background-image: url(images/zzim3.jpg);"></div>
+							<div class="slide" style="background-image: url(images/zzim4.jpg);"></div>
+							<div class="slide" style="background-image: url(images/zzim5.jpg);"></div>
+							<div class="slide" style="background-image: url(images/zzim6.jpg);"></div>
+							<a class="prev" onclick="button_click(-1)">&#10094</a>
+      						<a class="next" onclick="button_click(1)">&#10095</a>
+						</div>
+					</p>
+					</div>
+				</div>
+
+
+					
 			</div>
+
 		</div>
 	</section>
 
@@ -399,18 +443,6 @@
 				</div>
 			</div>
 
-			<!-- <div class="row">
-				<div class="col-md-12 text-center">
-
-					<p>
-						Copyright &copy;<script>
-							document.write(new Date().getFullYear());
-						</script> All rights reserved | This template is made with <i class="icon-heart color-danger"
-							aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					</p>
-				</div>
-			</div> -->
-
 		</div>
 	</footer>
 
@@ -435,7 +467,7 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-
+	<script src="js/modal.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
